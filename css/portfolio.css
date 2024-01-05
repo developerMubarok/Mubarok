@@ -17,7 +17,7 @@
 }
 .header{
     background: #fff8f3;
-    background-image: url(''), url();
+    background-image: url('../image/header_bg.png'), url();
     background-repeat: no-repeat;
     background-position: bottom right,left;
     }
@@ -41,13 +41,23 @@ nav li{
 }
 /* Banner styles */
 .banner{
+    padding: 30px 30px 30px 150px;
     display: flex;
     align-items: center;
-    margin: 0px 100px;
+    margin: 0px 100px; 
+    justify-content: space-between;
+}
+.banner-content{
+    max-width: 500px;
+}
+.banner .profile-pic{
+    width: 500px;
 }
 .banner-title{
     font-weight: 700;
     font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 
 }
 .banner-sub-title{
