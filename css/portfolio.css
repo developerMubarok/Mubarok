@@ -17,9 +17,9 @@
 }
 .header{
     background: #fff8f3;
-    background-image: url('../image/header_bg.png'), url();
+    background-image: url('../image/header_bg.png'), url('../image/developer.png');
     background-repeat: no-repeat;
-    background-position: bottom right,left;
+    background-position: bottom right, top left;
     }
 /* Header and navigation styles */
 nav{
