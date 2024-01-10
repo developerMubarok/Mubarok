@@ -2,6 +2,9 @@
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
 }
+body{
+    background: linear-gradient(45deg, pink , rgb(122, 122, 244)); 
+}
 .text-primary{
     color: #fd6e0a;
 }
@@ -16,7 +19,6 @@
     background: #fd6e0a;
 }
 .header{
-    background: #fff8f3;
     background-image: url('../image/header_bg.png'), url('../image/developer.png');
     background-repeat: no-repeat;
     background-position: bottom right, top left;
@@ -31,7 +33,7 @@ nav{
     font-style: 800;
     font-size: 45px;
 }
-nav ul{
+nav > ul{
     display: flex;
     align-items: center;
 }
@@ -82,7 +84,7 @@ section{
 /* About section styles */
 .about{
     
-    background: #fff8f3;
+    background: #b9cfe0;
     border-radius: 10px;
     padding: 130px 150px;
     text-align: center;
@@ -120,7 +122,7 @@ section{
     gap: 24px;
 }
 .skill{
-    background: #ffffff;
+    background:#4f3458;
     box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
     border-radius: 5px;
     padding: 30px;
@@ -170,7 +172,7 @@ section{
 .contact{
     display: flex;
     gap: 100px ;
-    background: #fff8f3;
+    background-color: #ae85ca;
     padding: 100px 150px;
 }
 .contact .section-title{
@@ -184,4 +186,43 @@ section{
 }
 .contact a{
     text-decoration: none;
+}
+/* Responsive styles */
+
+/* Mobile devices */
+.hide{
+    display: none;
+}
+@media screen and (max-width:576px){
+  .header{
+    background-image: none;
+
+}
+ nav, nav > ul, .skils-container, .resume-content, .contact,
+ .about-info-container, .banner{
+    flex-direction: column;
+ }
+ nav > ul {
+    gap: 10px;
+ }
+ .banner{
+    padding: 20px;
+ }
+ .contact, .about{
+    padding: 10px;
+ }
+ .contact input[type="text"], input[type="Email"], textarea{
+    width: 80%;
+ }
+ .banner .profile-pic{
+    width: 100%;
+ }
+}
+@media screen and (min-width:576px) and (max-width:960px){
+    .contact{
+        padding: 30px;
+     }
+     .btn-primary{
+        margin-bottom: 15px;
+     }
 }
